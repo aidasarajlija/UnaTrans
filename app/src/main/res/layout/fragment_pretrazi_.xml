@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragmenti.Pretrazi_Fragment"
+
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <ImageButton
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:id="@+id/btn_Nazad1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:tint="@android:color/white"
+                android:src="@drawable/ic_left_arrow"/>
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!-- TODO: Update blank fragment layout -->
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:layout_marginTop="30dp">
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_baseline_location_on_24px"
+        android:id="@+id/polazakslika"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPolaziste"
+        android:layout_marginTop="100dp"
+       android:hint="Polazište"
+        android:textSize="20dp"
+        android:textColor="#442c2e"
+        android:layout_toRightOf="@+id/polazakslika"
+            android:gravity="center_horizontal"
+      />
+
+
+
+
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_baseline_location_on_24px"
+        android:id="@+id/odredisteslika"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="180dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtOdrediste"
+        android:layout_marginTop="180dp"
+        android:hint="Odredište"
+        android:textSize="20dp"
+        android:textColor="#442c2e"
+        android:layout_toRightOf="@+id/polazakslika"
+        android:gravity="center"
+        />
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pretraži"
+        android:background="#00acc1"
+        android:id="@+id/btnPretrazi"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        android:layout_centerHorizontal="true"
+       android:layout_alignParentBottom="true"/>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_calendar"
+        android:id="@+id/datum"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="260dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Datum polaska"
+        android:gravity="center_horizontal"
+        android:textSize="20dp"
+        android:textColor="#442c2e"
+        android:layout_marginTop="260dp"
+        android:layout_toRightOf="@+id/datum"
+        android:id="@+id/txtDatumPolaska"/>
+
+
+
+
+
+</RelativeLayout>
+
+</RelativeLayout>

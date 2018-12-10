@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragmenti.Izvrsi_Rezervaciju"
+    android:background="#eeeeee"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <ImageButton
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:id="@+id/btn_Nazad3"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:tint="@android:color/white"
+                android:src="@drawable/ic_left_arrow"/>
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_marginTop="50sp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Polazište - Odredište"
+        android:textSize="16sp"
+        android:id="@+id/po"
+        android:textColor="#442c2e"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/po"
+        android:layout_marginTop="10dp"
+        android:text="Ispis"
+        android:textColor="#442c2e"
+        android:id="@+id/ispisRute"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Datum polaska"
+        android:textSize="16sp"
+        android:id="@+id/dp"
+        android:textColor="#442c2e"
+        android:layout_below="@+id/ispisRute"
+        android:layout_marginTop="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dp"
+        android:layout_marginTop="10dp"
+        android:text="Ispis"
+        android:textColor="#442c2e"
+        android:id="@+id/ispisDatuma"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vrijeme polaska - Vrijeme dolaska"
+        android:textSize="16sp"
+        android:id="@+id/vr"
+        android:textColor="#442c2e"
+        android:layout_below="@+id/ispisDatuma"
+        android:layout_marginTop="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vr"
+        android:layout_marginTop="10dp"
+        android:text="Ispis"
+        android:textColor="#442c2e"
+        android:id="@+id/ispisVrijeme"
+        android:textSize="16sp"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ispisVrijeme"
+        android:layout_marginTop="20sp"
+        android:textColor="#442c2e"
+        android:id="@+id/karte"></Spinner>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rezerviši"
+        android:background="#00acc1"
+       android:layout_alignParentBottom="true"
+
+        android:textSize="18dp"
+        android:id="@+id/btnRezervacija"
+        android:textColor="@android:color/white"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

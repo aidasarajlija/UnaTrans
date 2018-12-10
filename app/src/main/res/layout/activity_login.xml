@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="#eeeeee"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--&gt;-->
+
+
+
+        <!--</RelativeLayout>-->
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="50dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Autobusna stanica Bihac"
+        android:gravity="center"
+        android:id="@+id/stanica"
+        android:textSize="30sp"
+        android:fontFamily="cursive"
+        android:textColor="#442C2E"
+        android:layout_marginTop="60sp"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:id="@+id/email"
+        android:textColor="#442c2e"
+        android:inputType="textEmailAddress"
+      android:layout_below="@+id/stanica"
+        android:layout_marginTop="50dp"
+     />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Lozinka"
+        android:id="@+id/lozinka"
+        android:inputType="textPassword"
+        android:textColor="#442c2e"
+        android:layout_below="@+id/email"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prijavi se"
+        android:layout_below="@+id/lozinka"
+        android:background="#00acc1"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:id="@+id/btnPrijava"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registracija?"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="#442C2E"
+        android:id="@+id/registracija"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/btnPrijava"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

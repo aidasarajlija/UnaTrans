@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="10dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vrijeme polaska i odlaska"
+        android:textStyle="bold"
+        android:id="@+id/vri"
+        android:textColor="#442c2e"
+        android:textSize="16sp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lista"
+       android:layout_below="@+id/vri"
+        android:text="00"
+        android:textColor="#442c2e"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"/>
+
+</RelativeLayout>

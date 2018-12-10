@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragmenti.Zakup_Fragment"
+    android:id="@+id/izgled"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <ImageButton
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:id="@+id/btn_Nazad"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:tint="@android:color/white"
+                android:src="@drawable/ic_left_arrow"/>
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+
+   >
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+      android:padding="10dp"
+     android:layout_marginTop="40sp"
+        >
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kontakt informacije"
+        android:gravity="center"
+        android:textColor="#442c2e"
+        />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_man_user"
+        android:id="@+id/man"
+        android:layout_marginTop="40sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ime i prezime / Firma"
+        android:id="@+id/txtImeFirma"
+        android:gravity="center"
+        android:textColor="#442c2e"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/man"
+        />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_id_card"
+        android:id="@+id/id"
+        android:layout_marginTop="90sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="JMBG / ID broj"
+        android:id="@+id/txtJMBG"
+        android:gravity="center"
+        android:textColor="#442c2e"
+        android:inputType="number"
+        android:layout_below="@+id/txtImeFirma"
+        android:layout_toRightOf="@+id/id"/>
+
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_baseline_location_on_24px"
+        android:id="@+id/grad"
+        android:layout_marginTop="135sp"/>
+
+    <TextView
+        android:id="@+id/txtGrad"
+        android:layout_width="327dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtJMBG"
+        android:textColor="#442c2e"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/grad"
+        android:gravity="center"
+        android:hint="Grad"
+        android:textSize="20dp" />
+
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_phone_receiver"
+        android:id="@+id/telefon"
+        android:layout_marginTop="180sp"/>
+
+   <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Telefon"
+        android:id="@+id/txtTelefon"
+        android:gravity="center"
+       android:textColor="#442c2e"
+        android:inputType="phone"
+       android:layout_below="@+id/txtGrad"
+       android:layout_toRightOf="@+id/grad"/>
+
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_close_envelope"
+        android:id="@+id/mail"
+        android:layout_marginTop="230sp"/>
+
+      <EditText
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:hint="E-mail"
+          android:textColor="#442c2e"
+         android:id="@+id/txtEmail"
+         android:gravity="center"
+            android:inputType="textEmailAddress"
+          android:layout_below="@+id/txtTelefon"
+         android:layout_toRightOf="@+id/mail"/>
+
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Informacije o putovanju"
+           android:gravity="center"
+           android:textColor="#442c2e"
+           android:layout_marginTop="300dp"/>
+
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_baseline_location_on_24px"
+        android:id="@+id/ruta"
+        android:layout_marginTop="340sp"/>
+
+     <EditText
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:hint="Ruta putovanje"
+         android:id="@+id/txtRuta"
+         android:gravity="center"
+         android:textColor="#442c2e"
+         android:inputType="textMultiLine"
+         android:layout_marginTop="330dp"
+         android:layout_toRightOf="@+id/ruta"/>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_plane_tickets"
+        android:id="@+id/putnici"
+        android:layout_marginTop="390sp"/>
+
+      <EditText
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:hint="Broj putnika"
+         android:id="@+id/txtBrojPutnika"
+         android:gravity="center"
+          android:textColor="#442c2e"
+          android:inputType="number"
+          android:layout_below="@+id/txtRuta"
+          android:layout_toRightOf="@+id/putnici"/>
+
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_baseline_location_on_24px"
+        android:id="@+id/polazak"
+        android:layout_marginTop="430sp"/>
+
+    <EditText
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:hint="Adresa polaska"
+         android:id="@+id/txtAdresaPolaska"
+         android:gravity="center"
+        android:textColor="#442c2e"
+            android:inputType="textMultiLine"
+        android:layout_below="@+id/txtBrojPutnika"
+        android:layout_toRightOf="@+id/polazak"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Datum i vrijeme putovanja"
+        android:gravity="center"
+        android:textColor="#442c2e"
+        android:layout_marginTop="500dp"/>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_baseline_location_on_24px"
+        android:id="@+id/datumpolaska"
+        android:layout_marginTop="555sp"/>
+
+      <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:hint="Datum polaska "
+         android:id="@+id/txtDatumPolaskaZakup"
+         android:gravity="center"
+          android:textColor="#442c2e"
+         android:textSize="19dp"
+
+         android:layout_marginTop="550dp"
+          android:layout_toRightOf="@+id/datumpolaska"/>
+
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_clock_circular_outline"
+        android:id="@+id/vrijemepolaska"
+        android:layout_marginTop="600sp"/>
+
+      <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Vrijeme polaska "
+           android:id="@+id/txtVrijemePolaska"
+           android:gravity="center"
+          android:textSize="19dp"
+          android:textColor="#442c2e"
+          android:layout_marginTop="20dp"
+          android:layout_below="@+id/txtDatumPolaskaZakup"
+          android:layout_toRightOf="@+id/vrijemepolaska"/>
+
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_baseline_location_on_24px"
+        android:id="@+id/datumdolaska"
+        android:layout_marginTop="650sp"/>
+
+     <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="Datum dolaska "
+          android:id="@+id/txtDatumDolaska"
+          android:gravity="center"
+        android:textSize="19dp"
+         android:textColor="#442c2e"
+         android:layout_marginTop="25dp"
+         android:layout_below="@+id/txtVrijemePolaska"
+         android:layout_toRightOf="@+id/datumdolaska"/>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_clock_circular_outline"
+        android:id="@+id/vrijemedolaska"
+        android:layout_marginTop="695sp"/>
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="Vrijeme dolaska "
+          android:id="@+id/txtVrijemeDolaska"
+          android:gravity="center"
+          android:textSize="19sp"
+          android:textColor="#442c2e"
+          android:layout_marginTop="20dp"
+          android:layout_below="@+id/txtDatumDolaska"
+          android:layout_toRightOf="@+id/vrijemedolaska"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pošalji"
+        android:layout_marginTop="10dp"
+        android:background="#00acc1"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        android:id="@+id/btnPosalji"
+
+   android:layout_below="@+id/txtVrijemeDolaska"/>
+
+
+
+</RelativeLayout>
+
+</ScrollView>
+
+  </RelativeLayout>

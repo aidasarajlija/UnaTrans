@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RezervacijaActivity"
+   android:background="#eeeeee"
+    >
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+
+            <ImageButton
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:id="@+id/btn_Nazad4"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:tint="@android:color/white"
+                android:src="@drawable/ic_left_arrow"/>
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_marginTop="90dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Izvrši registaciju"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#442C2E"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ime"
+        android:textColor="#442c2e"
+        android:id="@+id/txtIme"
+     android:layout_marginTop="60sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Prezime"
+        android:id="@+id/Prezime"
+        android:textColor="#442c2e"
+        android:layout_below="@+id/txtIme"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textColor="#442c2e"
+        android:id="@+id/txtEmail"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/Prezime"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtLozinka"
+        android:layout_below="@+id/txtEmail"
+        android:hint="Lozinka"
+        android:textColor="#442c2e"
+        android:inputType="textPassword"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registracija"
+
+        android:id="@+id/btnRegistracija"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:background="#00acc1"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
